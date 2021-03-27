@@ -8,7 +8,6 @@ import com.hamilton.arpong.databinding.ActivityArpongGameBinding
 import com.hamilton.arpong.fragments.GameFragment
 import com.hamilton.arpong.services.GameBackgroundMusic
 import com.hamilton.arpong.utils.DifficultyLevel
-import com.hamilton.arpong.utils.checkIsSupportedDeviceOrFinish
 
 class ARPongGameActivity : AppCompatActivity() {
 
@@ -24,10 +23,6 @@ class ARPongGameActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         gameIntent = startMusic()
-
-        if (!checkIsSupportedDeviceOrFinish(activityTag, this)) {
-            return
-        }
 
         difficultyLevel = intent.extras!!.get("DIFFICULTY") as DifficultyLevel
 
