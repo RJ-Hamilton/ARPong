@@ -16,11 +16,13 @@
     <string name="difficulty_level_easy">Easy</string>
     <string name="difficulty_level_normal">Normal</string>
     <string name="difficulty_level_hard">Hard</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_arpong_game">ARPongGameActivity</string>
     <string name="action_settings">Settings</string>
     <string name="play_again">Play Again</string>
     <string name="game_winner">Game Winner:</string>
+    <string name="carlton_dance">Dancing Carlton GIF</string>
+    <string name="ar_pong_logo">AR Pong logo</string>
+    <string name="player_1">P1</string>
+    <string name="cpu">CPU</string>
+    <string name="zero_score">0</string>
 </resources>

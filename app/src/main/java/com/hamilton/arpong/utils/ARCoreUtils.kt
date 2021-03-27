@@ -1,26 +1,11 @@
 package com.hamilton.arpong.utils
 
 import android.content.Context
-import android.os.Build
-import android.util.Log
-import android.widget.Toast
-import androidx.appcompat.app.AppCompatActivity
 import com.google.ar.sceneform.math.Vector3
 import com.google.ar.sceneform.rendering.*
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.future.await
 import kotlinx.coroutines.withContext
-
-fun checkIsSupportedDeviceOrFinish(TAG: String, activity: AppCompatActivity): Boolean {
-    if (Build.VERSION.SDK_INT < Build.VERSION_CODES.N) {
-        val message = "Sceneform requires Android N or later"
-        Log.e(TAG, message)
-        Toast.makeText(activity, message, Toast.LENGTH_LONG).show()
-        activity.finish()
-        return false
-    }
-    return true
-}
 
 suspend fun makeSphereRenderable(
     context: Context,
